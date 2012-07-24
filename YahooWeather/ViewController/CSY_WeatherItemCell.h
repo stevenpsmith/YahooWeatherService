@@ -11,11 +11,11 @@
 
 @interface CSY_WeatherItemCell : UITableViewCell
 
-@property (nonatomic, strong) CSY_WeatherItem *weatherItem;
-
 @property (weak, nonatomic) IBOutlet UILabel *lblDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblText;
 @property (weak, nonatomic) IBOutlet UILabel *lblLow;
 @property (weak, nonatomic) IBOutlet UILabel *lblHigh;
+
+- (void) setWeatherItem:(CSY_WeatherItem *)weatherItem;
 
 @end

@@ -46,6 +46,7 @@
     [self setTable:nil];
     [self setLblTitle:nil];
     [self setWeatherItems:nil];
+    [self setZipCode:nil];
     [super viewDidUnload];
 }
 
@@ -64,7 +65,7 @@
     static NSString *CellId = @"WeatherItemCell";
     CSY_WeatherItemCell *cell = [tableView dequeueReusableCellWithIdentifier:CellId];
     if (!cell){
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CSY_WeatherItemCell" owner:self options:nil];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CSY_WeatherItemCell" owner:nil options:nil];
         cell = [nib objectAtIndex:0];
     }
     CSY_WeatherItem *weatherItem = [[self weatherItems] objectAtIndex:[indexPath row]];
