@@ -1,0 +1,1 @@
+See <https://github.com/stevenpsmith/WeatherComparator> for information regarding this project.
