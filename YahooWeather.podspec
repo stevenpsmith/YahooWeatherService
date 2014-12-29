@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'YahooWeather/API/*.{h,m}', 'YahooWeather/Model/*.{h,m}', 'YahooWeather/ViewController/*.{h,m}'
   s.resources = "YahooWeather/ViewController/*.{xib}"
   s.requires_arc = true
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~> 0.10.0'
 end
